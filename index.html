@@ -2,70 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hit The Button Math Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      background-color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
     }
-    .game-container {
-      flex: 1;
-      padding: 40px 0;
+    .navbar {
+      margin-bottom: 30px;
     }
     iframe {
       width: 100%;
       height: 600px;
       border: none;
-      border-radius: 10px;
+      margin-bottom: 40px;
     }
     footer {
-      background-color: #f8f9fa;
-      padding: 20px 0;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-
-  <!-- Top Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">HitTheButton Math</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://hitthebuttonmath.github.io/">Hit The Button</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown">
+              Games
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bonds.html">Number Bonds</a></li>
+              <li><a class="dropdown-item" href="doubles.html">Doubles</a></li>
+              <li><a class="dropdown-item" href="halves.html">Halves</a></li>
+              <li><a class="dropdown-item" href="timestables.html">Time Tables</a></li>
+              <li><a class="dropdown-item" href="division.html">Division Facts</a></li>
+              <li><a class="dropdown-item" href="squares.html">Square Numbers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Container -->
-  <div class="container game-container text-center">
-    <h2 class="mb-4">Play Hit The Button Math Game</h2>
-    <iframe src="game.html" title="Hit The Button Game"></iframe>
+  <div class="container">
+    <iframe src="game.html"></iframe>
+
+    <section class="my-5">
+      <h2 class="text-center mb-4">About Hit The Button Math Game</h2>
+      <p>
+        Hit The Button is an interactive online math game that helps children master essential arithmetic skills through fun, fast-paced gameplay. Designed for elementary and middle school students, this educational tool covers a range of math topics including number bonds, doubles, halves, multiplication tables, division facts, and square numbers. Each game is designed to improve accuracy and speed, boosting both confidence and competence in math.
+      </p>
+      <p>
+        The gameplay is simple yet engaging. Players are presented with a series of quick-fire questions and must click the correct answer from a selection of options before time runs out. The colorful, user-friendly interface and responsive design make the game enjoyable across devices, from desktops to tablets and smartphones.
+      </p>
+      <p>
+        For example, in the Number Bonds section, users practice identifying pairs of numbers that add up to 10, 20, or 100. The Doubles and Halves games help reinforce basic addition and subtraction skills, while the Multiplication and Division sections develop number sense and fact fluency. Square Numbers challenges children to identify squares of numbers quickly, encouraging memorization and pattern recognition.
+      </p>
+      <p>
+        The built-in timer and scoring system add a layer of excitement and motivate children to improve their performance. Each time a game begins, the system presents random questions to keep learners engaged and prevent repetition. There is also a built-in feedback mechanism, celebrating correct answers with instant congratulations.
+      </p>
+      <p>
+        Parents and educators can use Hit The Button as a supplementary math tool in classrooms or for at-home learning. It’s especially helpful for practice sessions, warm-ups, or brain breaks. The full-screen modal design ensures maximum focus, and responsive layouts allow for fluid interaction across various screen sizes.
+      </p>
+      <p>
+        Hit The Button Math Game is not just about solving math problems – it’s about making math exciting and rewarding. The game design incorporates visual engagement, immediate feedback, and time-based challenges to create an effective and enjoyable learning environment.
+      </p>
+      <p>
+        Whether your child is just starting out with number bonds or looking to master their times tables and division facts, Hit The Button offers targeted, age-appropriate practice. And as your learner progresses, the increasing complexity of each section ensures that they are continually challenged and motivated.
+      </p>
+      <p>
+        In summary, Hit The Button is an ideal math companion that brings together learning and play in one powerful package. With its diverse range of games, intuitive UI, and focus on foundational math skills, it’s a must-have resource for any parent or educator looking to enhance math fluency in a fun way.
+      </p>
+    </section>
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p class="mb-1">&copy; 2025 HitTheButtonMath.com - All rights reserved.</p>
-      <p class="mb-0">
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Use</a> | 
-        <a href="#">Disclaimer</a>
-      </p>
-    </div>
+  <footer>
+    &copy; 2025 Hit The Button Math. All rights reserved. | <a href="privacy.html" class="text-light">Privacy Policy</a>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
